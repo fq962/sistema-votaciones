@@ -28,13 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.boton1 = new FontAwesome.Sharp.IconButton();
             this.SuspendLayout();
+            // 
+            // boton1
+            // 
+            this.boton1.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.boton1.IconColor = System.Drawing.Color.Black;
+            this.boton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.boton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.boton1.Location = new System.Drawing.Point(283, 167);
+            this.boton1.Name = "boton1";
+            this.boton1.Size = new System.Drawing.Size(129, 54);
+            this.boton1.TabIndex = 0;
+            this.boton1.Text = "Hola";
+            this.boton1.UseVisualStyleBackColor = true;
+            this.boton1.Click += new System.EventHandler(this.boton1_Click);
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.boton1);
             this.Name = "frmLogin";
             this.Text = "LOGIN";
             this.ResumeLayout(false);
@@ -42,6 +58,8 @@
         }
 
         #endregion
+
+        private FontAwesome.Sharp.IconButton boton1;
     }
 }
 

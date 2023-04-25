@@ -6,7 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using FontAwesome.Sharp;
 using System.Windows.Forms;
+using SweetAlertSharp;
 
 namespace sistema_votaciones
 {
@@ -14,7 +16,12 @@ namespace sistema_votaciones
     {
         public frmLogin()
         {
-            InitializeComponent();
+            InitializeComponent();            
+        }
+
+        private void boton1_Click(object sender, EventArgs e)
+        {
+            SweetAlert.Show("WOHOOO", "Hola gato, te amo");
         }
     }
 }
