@@ -1,4 +1,4 @@
-﻿namespace sistema_votaciones
+namespace sistema_votaciones
 {
     partial class frmLogin
     {
